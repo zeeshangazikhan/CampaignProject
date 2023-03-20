@@ -1,0 +1,361 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f1f6fb;
+  color: #333;
+}
+
+/* Container styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Filter styles */
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 90%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+}
+
+.search-input {
+  width: 350px !important;
+}
+
+@media screen and (max-width: 600px) {
+  input[type='text'] {
+    width: 100%;
+  }
+}
+
+/* Table styles */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #005ea8;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.status-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.active {
+  background-color: #34a853;
+}
+
+.inactive {
+  background-color: #ea4335;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    font-size: 9px;
+  }
+}
+
+/* Date range styles */
+
+.date-range-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-range-wrapper label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.date-range-wrapper input[type='date'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 45%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #333;
+}
+
+@media screen and (max-width: 800px) {
+  .date-range-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .date-range-wrapper input[type='date'] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filters {
+    display: unset;
+  }
+
+  .search-input {
+    width: 100% !important;
+  }
+  input[type='text'] {
+    width: 100%;
+  }
+}
+
+
+/* Add hover effect to table rows */
+tr:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* Add hover effect to input fields */
+input[type='text']:hover {
+  border-color: #0077cc;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+
+.filters input[type='text']:hover {
+  background-color: #f1f6fb;
+}
+
+table td:hover {
+
+  cursor: pointer;
+}
+
+.status-circle:hover {
+  transform: scale(1.2);
+}
+
+/* Hover styles */
+
+input[type='text']:hover,
+input[type='text']:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+}
+
+
+
+
+/* Animations */
+
+
+@keyframes slide-in {
+  to {
+    transform: translateX(0);
+  }
+}
+.status-circle:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+input[type='text']:hover,
+input[type='text']:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+tr:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.container {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+  }
+  
+  @keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+  }
+  
+  @-o-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+  }
+  tr:hover {
+    background-color: #f2f2f2;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    }
+
+
+/* Campaign Form start */
+
+.new-campaign-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #6d9eeb; /* blue color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.new-campaign-form h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff; /* white color */
+}
+
+.dateWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dateWrapper > * {
+  margin: 10px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.new-campaign-form input[type='text'],
+.new-campaign-form input[type='number'],
+.new-campaign-form .react-datepicker__input-container  input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff; /* white color */
+  color: #333; /* dark color */
+}
+
+.new-campaign-form input[type='text']:focus,
+.new-campaign-form input[type='number']:focus,
+.new-campaign-form .react-datepicker__input-container input[type='text']:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #6d9eeb; /* blue color */
+}
+
+.new-campaign-form button[type='submit'] {
+  background-color: #005ea8; /* blue color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.new-campaign-form button[type='submit']:hover {
+  background-color: #005a8c; /* darker blue color */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .dateWrapper > * {
+    margin-bottom: 20px;
+    flex: unset;
+  }
+  .dateWrapper div{
+    width: 45% ;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .new-campaign-form input[type='text'],
+  .new-campaign-form input[type='number'],
+  .new-campaign-form .react-datepicker__input-container input[type='text'] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .new-campaign-form button[type='submit'] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .dateWrapper div{
+    width: 100% ;
+    display: inline-block;
+  }
+}
+
+.react-datepicker-ignore-onclickoutside{
+  width: 100%;
+}
+
+/* Campaign Form End */
+
+
+
